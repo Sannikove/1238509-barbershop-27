@@ -45,7 +45,7 @@
       </ul>
     </section>
     <section>
-      <h2>Описание товара</h2>
+      <h2 class="visually-hidden">Описание товара</h2>
       <p>Есть в наличии</p>
       <p>Артикул: dexter-ae</p>
       <p>Travel Kit – необходимый аксессуар во время любого путешествия.
@@ -77,9 +77,9 @@
     <div>
       <p>Давайте дружить!</p>
       <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
+        <li><a href="#" class="visually-hidden">Вконтакте</a></li>
+        <li><a href="#" class="visually-hidden">Фейсбук</a></li>
+        <li><a href="#" class="visually-hidden">Инстаграм</a></li>
       </ul>
     </div>
     <p>
@@ -89,9 +89,32 @@
 
   <section>
     <h2>Личный кабинет</h2>
-    <p>Введите свой логин и пароль.</p>
-    <!-- Здесь будет форма -->
-    <button type="button">Закрыть</button>
+    <p>Введите пожалуйста свой логин и пароль</p>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label class="visually-hidden">
+          Логин
+        <input type="email" name="login" placeholder="email@example.com">
+        </label>
+      </p>
+      <p>
+        <label class="visually-hidden">
+        Пароль
+        <input type="password" name="password" placeholder="••••••••">
+        </label>
+      </p>
+      <p>
+        <label>
+        <input type="checkbox" name="remember">
+        Запомните меня
+        </label>
+        <a href="#">Я забыл пароль!</a>
+      </p>
+      <button class="button" type="submit">
+        Войти
+      </button>
+    </form>
+    <button class="visually-hidden" type="button">Закрыть</button>
   </section>
 </body>
 </html>
