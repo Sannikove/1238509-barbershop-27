@@ -19,7 +19,9 @@
         </ul>
         <ul>
           <li>
-             <button type="button">Войти</button>
+            <a href="login.html">
+              Вход
+            </a>
            </li>
         </ul>
       </nav>
@@ -29,7 +31,7 @@
       <h1>Барбершоп «Бородинский»</h1>
 
       <section>
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <ul>
           <li>
             <h3>Быстро</h3>
@@ -89,7 +91,35 @@
       <section>
         <h2>Записаться</h2>
         <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <!-- Здесь будет форма -->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label>
+             Дата
+             <input type="date" name="date" placeholder="2017-10-08" value="2017-10-08">
+            </label>
+          </p>
+          <p>
+            <label>
+              Время
+              <input type="time" name="time" placeholder="10:00" value="10:00"> 
+            </label>
+          </p>
+          <p>
+            <label>
+              Ваше имя
+              <input type="text" name="name" value="" placeholder="Борода">
+            </label>
+          </p>
+          <p>
+             <label> 
+               Телефон
+              <input type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
+            </label>
+          </p>
+          <p>
+            <button class="button" type="submit">Отправить</button>
+          </p>
+        </form>
       </section>
     </main>
     <footer>
@@ -115,14 +145,40 @@
 
     <section>
       <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль.</p>
-      <!-- Здесь будет форма -->
-      <button type="button">Закрыть</button>
+      <p>Введите пожалуйста свой логин и пароль</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden">
+            Логин
+          <input type="email" name="login" placeholder="email@example.com">
+          </label>
+        </p>
+        <p>
+          <label class="visually-hidden">
+          Пароль
+          <input type="password" name="password" placeholder="••••••••">
+          </label>
+        </p>
+        <p>
+          <label>
+          <input type="checkbox" name="remember">
+          Запомните меня
+          </label>
+          <a href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button" type="submit">
+          Войти
+        </button>
+      </form>
+      <button class="visually-hidden" type="button">Закрыть</button>
     </section>
 
     <section>
-      <h2>Как до нас добраться</h2>
-      <button type="button">Закрыть</button>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button type="button" class="visually-hidden">Закрыть</button>
     </section>
   </body>
 </html>
